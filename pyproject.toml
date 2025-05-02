@@ -1,0 +1,6 @@
+[project]
+name = "listing-api-to-algolia"
+version = "1.0.0"
+
+[tool.setuptools]
+packages = ["importer"]

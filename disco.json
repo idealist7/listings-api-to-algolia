@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "services": {
+        "import_cron": {
+            "type": "cron",
+            "schedule": "*/20 * * * *",
+            "command": "python importer/cron.py",
+            "timeout": 1170,
+            "volumes": [
+                {
+                    "name": "data",
+                    "destinationPath": "/data"
+                }
+            ]
+        }
+    }
+}
