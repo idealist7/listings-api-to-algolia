@@ -54,7 +54,8 @@ def import_cron():
         new_since, has_more = import_batch(since=since)
         if new_since is not None:
             save_since(new_since)
-            assert new_since != since
+            if has_more:
+                assert new_since != since
             since = new_since
     log.info("Import cron end, since for next run: %s", since)
 
