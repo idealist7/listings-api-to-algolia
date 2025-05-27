@@ -10,7 +10,6 @@ from importer.config import (
     algolia_api_key,
     algolia_app_id,
     algolia_index_name,
-    truncate_to_10kb,
 )
 
 import logging
