@@ -28,7 +28,7 @@ disco projects:add \
     ALGOLIA_API_KEY=YOUR_ALGOLIA_API_KEY \
     CRON_ENABLED=true \
     WAIT_SECONDS=0.2 \
-    --name idealist-importer
+    --name idealist-importer \
     --github GITHUB_USER/YOUR_REPO
 ```
 
