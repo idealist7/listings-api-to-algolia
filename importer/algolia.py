@@ -86,6 +86,6 @@ def _truncate_longuest_attribute(listing: dict[str, Any], truncate_by: int) -> N
     longuest = max(
         attrs, key=lambda attr: len(listing[attr]) if listing[attr] is not None else 0
     )
-    log.info("Truncating %s of listing %s")
+    log.info("Truncating %s of listing %s", longuest, listing["objectID"])
     padding = 20
     listing[longuest] = listing[longuest][: -(truncate_by + padding)]
